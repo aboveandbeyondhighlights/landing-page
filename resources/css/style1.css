@@ -23,31 +23,62 @@ html {
 /* Reusable Component */
 /* ---------------------------------------- */
 
-.row {
-  max-width: 1140px;
-  margin: 0 auto;
-
+.flex-container-1 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.box {
-
+.flex-container-2 {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
 }
+
+.wrap-effect {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-item {
+flex-shrink: 3;
+}
+
+hr {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 93px;
+  background-color: #C2D1D9;
+  border: none;
+}
+
 
 /* ---------- Headings ---------- */
 h1 {
   color: #505D68;
   font-size: 215%;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 0;
   margin-bottom: 20px;
-  letter-spacing: 1px;
-  word-spacing: 3px;
+  line-height: 100%;
+}
+
+h3 {
+  color: #505D68;
+  font-size: 105%;
+  font-weight: 700;
 }
 
 p {
   margin-bottom: 20px;
   font-size: 85%;
-  font-weight: 100:
+  font-weight: 300;
+  line-height: 24px;
 }
 
 /* ---------- Buttons ---------- */
@@ -93,38 +124,48 @@ p {
   background: #E7E7E7;
   box-shadow: 0px 2px #F2F5F7;
   height: 79px;
-  padding-bottom: 40px;
-  padding-top: 20px;
+  padding: auto auto;
+  margin: auto auto;
 }
 
 .welcome-text-box {
-  position: absolute;
-  width: 570px;
-  top: 70%;
-  left: 30%;
-  transform: translate(-50%, -50%);
+  width: 557px;
+  height: 338px;
 }
 
+.benefits-text-box-1 {
+  width: 459px;
+  height: 240.1px;
+}
+
+.benefits-text-box-2 {
+  width: 459px;
+  height: 258.1px;
+}
+/* ---------- Images ---------- */
 .goal-image {
-  position: absolute;
-  width: 570px;
-  top: 75%;
-  right: 37%;
-  transform: translate(50%, -50%);
+  width: 648px;
+  height: 451px;
 }
 
+.todo-image {
+  width: 548px;
+  height: 449px;
+}
 
+.search-image {
+  width: 671px;
+  height: 509px;
+}
 
 .main-nav {
   float: right;
   list-style: none;
-
 }
 
 .main-nav li {
   display: inline-block;
   margin-left: 40px;
-
 }
 
 .main-nav li a {
